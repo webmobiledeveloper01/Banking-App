@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationSetting">
+
+
+    <RelativeLayout
+        android:id="@+id/relHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/imgBtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:background="@null"
+            android:padding="14dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/txtTT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification Setting"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/imgBtnBack"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relHeader"
+        android:layout_margin="16dp">
+        <RelativeLayout
+            android:id="@+id/relReceiveMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tRM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receive Money"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tRM"
+                android:layout_marginTop="4dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toLeftOf="@id/switchReceiveMoney"
+                android:text="Notification when you receive money"/>
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchReceiveMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relSendMoney"
+            android:layout_width="match_parent"
+            android:layout_below="@id/relReceiveMoney"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tSM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send Money"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tSM"
+                android:layout_marginTop="4dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toLeftOf="@id/switchSendMoney"
+                android:text="Notification when you send money"/>
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchSendMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relRequestMoney"
+            android:layout_width="match_parent"
+            android:layout_below="@id/relSendMoney"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tReqM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request Money"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tReqM"
+                android:layout_marginTop="4dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toLeftOf="@id/switchRequestMoney"
+                android:text="Notification when you receive money request"/>
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchRequestMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

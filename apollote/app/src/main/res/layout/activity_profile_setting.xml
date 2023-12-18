@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProfileSetting">
+
+    <RelativeLayout
+        android:id="@+id/relHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/imgBtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:background="@null"
+            android:padding="14dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/txtTT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Setting"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/imgBtnBack"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relHeader"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:id="@+id/relProfileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleUser"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/img_sample"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_below="@id/circleUser"
+                android:layout_toRightOf="@id/circleUser"
+                android:layout_marginTop="-40dp"
+                android:layout_marginStart="-40dp"
+                app:cardCornerRadius="50dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_camera"/>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtName"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/relProfileImage"
+            android:hint="Name"
+            app:hintAnimationEnabled="true"
+            app:boxStrokeColor="@color/colorGrayLight"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:padding="14dp"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtEmail"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/txtName"
+            android:hint="Email"
+            app:hintAnimationEnabled="true"
+            app:boxStrokeColor="@color/colorGrayLight"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textEmail"
+                android:layout_width="match_parent"
+                android:padding="14dp"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPhone"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/txtEmail"
+            android:hint="Mobile Number"
+            app:hintAnimationEnabled="true"
+            app:boxStrokeColor="@color/colorGrayLight"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textPhone"
+                android:layout_width="match_parent"
+                android:padding="14dp"
+                android:text="+919358174783"
+                android:enabled="false"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="52dp"
+            android:layout_below="@id/txtPhone"
+            app:cornerRadius="8dp"
+            style="@style/MaterialButtonStyle"
+            android:text="Save"
+            android:layout_marginTop="40dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

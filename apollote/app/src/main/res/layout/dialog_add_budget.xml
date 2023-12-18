@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtChangeBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Budget"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="@color/black"/>
+
+    <ImageButton
+        android:id="@+id/imgBtnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_clear_black_24"
+        android:background="@null"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"/>
+
+    <LinearLayout
+        android:id="@+id/linAmount"
+        android:layout_width="220dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/txtChangeBudget"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            android:textSize="32sp"/>
+        <EditText
+            android:id="@+id/textAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txtCurrency"
+            android:text="500.00"
+            android:background="@null"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="52sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linAmount"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="You have used $230 out of your current budget $500"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInfo"
+        android:minHeight="52dp"
+        app:cornerRadius="8dp"
+        style="@style/MaterialButtonStyle"
+        android:text="Save"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

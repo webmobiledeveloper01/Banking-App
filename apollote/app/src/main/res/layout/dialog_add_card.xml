@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/imgBtnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_clear_black_24"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"
+        android:background="@null"/>
+
+
+    <TextView
+        android:id="@+id/txtTapCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap visa card on NFC."
+        android:layout_below="@id/imgBtnCancel"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/imgAddCard"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_below="@id/txtTapCard"
+        android:src="@drawable/add_card"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txtAddManually"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Manually"
+        android:visibility="gone"
+        android:padding="12dp"
+        android:layout_below="@id/imgAddCard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorSecondaryDark"/>
+
+</RelativeLayout>

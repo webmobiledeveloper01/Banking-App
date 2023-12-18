@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="10dp"
+    android:layout_margin="4dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginVertical="4dp"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleUser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_sample"/>
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You received a payment of $860.00 from Josie Amanda"
+            android:layout_toRightOf="@id/circleUser"
+            android:layout_toLeftOf="@id/btnPay"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:04PM"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:layout_below="@id/txtTitle"
+            android:layout_toRightOf="@id/circleUser"
+            android:layout_marginStart="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txtTime"
+            android:layout_toRightOf="@id/circleUser"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorGrayLight"/>
+    </RelativeLayout>
+
+</RelativeLayout>

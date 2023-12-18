@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#0047CC</color>
+    <color name="colorPrimaryDark">#003eb4</color>
+    <color name="colorPrimaryLight">#1a59d1</color>
+    <color name="colorPrimaryLight2">#401a59d1</color>
+    <color name="colorPrimaryLight3">#201a59d1</color>
+    <color name="colorPrimaryLight4">#20C1D6FF</color>
+
+    <color name="colorSecondary">#3dc2ff</color>
+    <color name="colorSecondaryDark">#36abe0</color>
+    <color name="colorSecondaryLight">#50c8ff</color>
+    <color name="colorSecondaryLight2">#4050c8ff</color>
+
+    <color name="colorTernary">#5260ff</color>
+    <color name="colorTernaryDark">#4854e0</color>
+    <color name="colorTernaryLight">#6370ff</color>
+
+    <color name="colorSuccess">#2dd36f</color>
+    <color name="colorSuccessDark">#28ba62</color>
+    <color name="colorSuccessLight">#42d77d</color>
+
+    <color name="colorWarning">#ffc409</color>
+    <color name="colorWarningDark">#e0ac08</color>
+    <color name="colorWarningLight">#ffca22</color>
+
+    <color name="colorDanger">#eb445a</color>
+    <color name="colorDangerDark">#cf3c4f</color>
+    <color name="colorDangerLight">#ed576b</color>
+
+    <color name="colorRed">#FF0022</color>
+
+    <color name="colorGrayDark">#C3C3C3</color>
+    <color name="colorGrayDark2">#818181</color>
+    <color name="colorGrayLight">#E6E6E6</color>
+    <color name="colorGrayLight2">#F8F8F8</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#E6E6E6</color>
+
+</resources>
